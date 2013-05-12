@@ -25,7 +25,6 @@ public class NCTController {
 		return "nctBookings.jsp";
 	}
 	
-	
 	@RequestMapping("create")
 	public String create(@RequestParam String customerFirstName, @RequestParam String customerLastName, 
 			@RequestParam String registration, @RequestParam String vehicleMake, @RequestParam String vehicleModel, 
@@ -44,7 +43,7 @@ public class NCTController {
 		return "nctBookings.jsp";
 	}
 	
-	@RequestMapping("close")
+	@RequestMapping("cancel")
 	public String close(@RequestParam int bookingId, Model model) {
 		nctService.closeBooking(bookingId);
 		model.addAttribute("nctBookings", nctService.getAllBookings());
