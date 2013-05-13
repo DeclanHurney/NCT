@@ -45,7 +45,7 @@ public class NCTController {
 	
 	@RequestMapping("cancel")
 	public String close(@RequestParam int bookingId, Model model) {
-		nctService.closeBooking(bookingId);
+		nctService.cancelBooking(bookingId);
 		model.addAttribute("nctBookings", nctService.getAllBookings());
 		return "nctBookings.jsp";
 	}

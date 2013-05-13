@@ -22,4 +22,7 @@ public class VehicleServiceImpl implements VehicleService {
 		nctVehicles.add(vehicle);
 		return vehicle;
 	}
+	public VehicleRepository getNctVehicles() {
+		return nctVehicles;
+	}
 }

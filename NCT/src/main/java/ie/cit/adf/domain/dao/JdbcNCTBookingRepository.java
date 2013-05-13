@@ -14,7 +14,7 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
-@Secured("ROLE_USER")
+//@Secured("ROLE_USER")
 public class JdbcNCTBookingRepository implements NCTBookingRepository{
 	
 	private JdbcTemplate jdbcTemplate;

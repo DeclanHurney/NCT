@@ -22,7 +22,7 @@ public class NCTServiceImpl implements NCTService{
 	}
 	
 	@Transactional
-	public void closeBooking(int bookingId) {
+	public void cancelBooking(int bookingId) {
 		NCTBooking nctBooking = nctBookings.findByBookingId(bookingId);	
 		if (nctBooking != null){										
 			nctBooking.setStatus("Cancelled");

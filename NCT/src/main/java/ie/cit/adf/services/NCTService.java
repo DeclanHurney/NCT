@@ -17,7 +17,7 @@ public interface NCTService {
 
 	void delete(int bookingId);
 
-	void closeBooking(int bookingId);
+	void cancelBooking(int bookingId);
 
 	void openBooking(int bookingId);
 	int findBookingIdByVehicleId(String vehicleId);

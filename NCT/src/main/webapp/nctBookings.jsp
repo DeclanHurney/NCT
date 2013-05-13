@@ -10,9 +10,9 @@
 <title>NCT Booking</title>
 </head>
 <body>
-	<a href="j_spring_security-logout">Logout: 
+	 <!-- <a href="j_spring_security-logout">Logout: 
 		<security:authentication property="principal.username"/>
-	</a>
+	</a>-->
 	<h1>NCT Booking Application</h1>
 	<form action="create.html" method="post">
 		<fieldset>

@@ -34,7 +34,7 @@ public class InMemoryNCTServiceImpl implements NCTService{
 		return 0;
 	}
 	
-	public void closeBooking(int bookingId) {
+	public void cancelBooking(int bookingId) {
 		for (NCTBooking nctBooking : nctBookings){
 			if (nctBooking.getBookingId() == bookingId){
 				nctBooking.setStatus("Cancelled");
