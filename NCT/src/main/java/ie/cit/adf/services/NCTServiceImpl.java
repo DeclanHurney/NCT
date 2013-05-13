@@ -20,17 +20,6 @@ public class NCTServiceImpl implements NCTService{
 	public int findBookingIdByVehicleId(String vehicleId){
 		return nctBookings.findIdByVehicleId(vehicleId);
 	}
-	public NCTBooking createNewBooking(String text) {
-		NCTBooking nctBooking = new NCTBooking();
-		nctBooking.setRegistration(text);
-		nctBooking.setCustomerFirst("Aine");
-		nctBooking.setCustomerLast("Hurney");
-		nctBooking.setLocation("Galway");
-		nctBooking.setDate("14-Jun-2013");
-		nctBooking.setStatus("Active");
-		nctBookings.addNCTBooking(nctBooking);
-		return nctBooking;
-	}
 	
 	@Transactional
 	public void closeBooking(int bookingId) {
